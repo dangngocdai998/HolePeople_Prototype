@@ -6,6 +6,9 @@ namespace HolePeople
 {
     public interface IEntity
     {
+        public TypeEntity GetTypeEntity();
+        public ColorType GetColorTypeEntity();
+
 
     }
 }

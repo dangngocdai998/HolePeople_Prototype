@@ -6,16 +6,25 @@ namespace HolePeople
 {
     public class Entity : MonoBehaviour, IEntity
     {
-        // Start is called before the first frame update
-        void Start()
-        {
+        [Header("Setup")]
+        [SerializeField] TypeEntity typeEntity;
+        [SerializeField] ColorType colorEntity;
 
+
+
+        #region  IEntity
+
+        public TypeEntity GetTypeEntity()
+        {
+            return typeEntity;
         }
 
-        // Update is called once per frame
-        void Update()
+        public ColorType GetColorTypeEntity()
         {
-
+            return colorEntity;
         }
+        #endregion
+
+
     }
 }

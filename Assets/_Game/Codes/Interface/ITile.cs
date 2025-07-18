@@ -6,6 +6,10 @@ namespace HolePeople
 {
     public interface ITile
     {
+        public Vector2 GetPosTile();
+        public string GetKeyTile();
 
+        public TypeEntity GetTypeEntity();
+        public ColorType GetColorTypeEntity();
     }
 }
